@@ -66,3 +66,26 @@ end)
       end
 })
 OrionLib:Init()
+
+ab:AddButton({
+    Name = "CameraPanty:By Miloszurek/qSname",
+    Callback = function()
+              local Mouse = game:GetService("Players").LocalPlayer:GetMouse()
+local pro = false
+local witekmadowna = "l"
+
+Mouse.KeyDown:Connect(function(Key)
+    if Key == witekmadowna then
+        if pro then
+            pro = false
+        else
+            pro = true
+            while pro and wait() do
+                game:GetService("Workspace").Camera.CFrame = CFrame.new(778.791687, -51.0170288, 1556.51135, -0.558143377, -0.817138314, 0.144086659, 0, -0.173651844, 0.984807074, 0.829744577, -0.549663544, 0.0969226286)
+            end
+        end
+    end
+end)
+      end
+})
+OrionLib:Init()
