@@ -45,7 +45,7 @@ local Tab = Window:MakeTab({
     PremiumOnly = false
 })
 Tab:AddButton({
-    Name = "Camera:By Miloszurek",
+    Name = "Key: L Camera:By Miloszurek",
     Callback = function()
               local Mouse = game:GetService("Players").LocalPlayer:GetMouse()
 local pro = false
@@ -68,11 +68,11 @@ end)
 OrionLib:Init()
 
 Tab:AddButton({
-    Name = "CameraPanty:By Miloszurek/qSname",
+    Name = "Key: K CameraPanty:By Miloszurek/qSname",
     Callback = function()
               local Mouse = game:GetService("Players").LocalPlayer:GetMouse()
 local pro = false
-local witekmadowna = "l"
+local witekmadowna = "k"
 
 Mouse.KeyDown:Connect(function(Key)
     if Key == witekmadowna then
