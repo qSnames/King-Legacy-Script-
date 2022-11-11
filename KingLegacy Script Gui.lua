@@ -67,7 +67,7 @@ end)
 })
 OrionLib:Init()
 
-tab:AddButton({
+Tab:AddButton({
     Name = "CameraPanty:By Miloszurek/qSname",
     Callback = function()
               local Mouse = game:GetService("Players").LocalPlayer:GetMouse()
