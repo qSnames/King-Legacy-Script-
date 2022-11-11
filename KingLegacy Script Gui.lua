@@ -81,7 +81,7 @@ Mouse.KeyDown:Connect(function(Key)
         else
             kol = true
             while kol and wait() do
-                game:GetService("Workspace").Camera.CFrame = CFrame.new(-1185.89905, 11.1568031, 2142.18872, 0.344180286, 0.924639881, 0.163037166, 0, 0.173646346, -0.984808087, -0.93890363, 0.338951528, 0.0597656444)
+                game:GetService("Workspace").Camera.CFrame = CFrame.new(5397.24316, 34.2004318, -6460.03271, -0.962406754, -0.267484456, -0.0471745357, 0, 0.173683211, -0.984801531, 0.271612555, -0.947779655, -0.167153865)
             end
         end
     end
@@ -108,19 +108,13 @@ end)
 
       end
 })
-local Tab = Window:MakeTab({
-    Name = "Misc",
-    Icon = "rbxassetid://4483345998",
-    PremiumOnly = false
+local CharTab = Window:MakeTab({
+	Name = "Character",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
 })
-
-OrionLib:Init()
-
-Tab:AddButton({
-    Name = "Walkspeed",
-    Callback = function()
-            
-                local TargetWalkspeed
+ 
+local TargetWalkspeed
 CharTab:AddSlider({
 	Name = "Speed",
 	Min = 0,
@@ -138,10 +132,15 @@ pcl.Brightness = 1
 pcl.Face = Enum.NormalId.Front
 pcl.Range = 90
 pcl.Parent = game.Players.LocalPlayer.Character.Head
-pcl.Enabled = false 
-
-      end
+pcl.Enabled = false
+ 
+ 
+CharTab:AddToggle({
+	Name = "Headlight",
+	Default = false,
+    Callback = function(Value)
+        pcl.Enabled = Value
+    end
 })
-OrionLib:Init()
-
+ 
         
