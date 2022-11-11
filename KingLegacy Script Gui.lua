@@ -117,14 +117,15 @@ local CharTab = Window:MakeTab({
 local TargetWalkspeed
 CharTab:AddSlider({
 	Name = "Speed",
-	Min = 0,
-	Max = 50,
+	Min = 16,
+	Max = 250,
 	Default = 5,
 	Color = Color3.fromRGB(255,255,255),
 	Increment = 1,
-	Callback = function(Value)
-		TargetWalkspeed = Value
-	end    
+	Callback = function(Signa)
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Sigma
+    end
+	 
 })
  
 local pcl = Instance.new("SpotLight")
