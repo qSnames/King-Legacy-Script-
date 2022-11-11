@@ -81,7 +81,7 @@ Mouse.KeyDown:Connect(function(Key)
         else
             kol = true
             while kol and wait() do
-                game:GetService("Workspace").Camera.CFrame = CFrame.new(778.791687, -51.0170288, 1556.51135, -0.558143377, -0.817138314, 0.144086659, 0, -0.173651844, 0.984807074, 0.829744577, -0.549663544, 0.0969226286)
+                game:GetService("Workspace").Camera.CFrame = CFrame.new(-1185.89905, 11.1568031, 2142.18872, 0.344180286, 0.924639881, 0.163037166, 0, 0.173646346, -0.984808087, -0.93890363, 0.338951528, 0.0597656444)
             end
         end
     end
@@ -91,7 +91,7 @@ end)
 OrionLib:Init()
 
 local Tab = Window:MakeTab({
-    Name = "Lcok",
+    Name = "Lock",
     Icon = "rbxassetid://4483345998",
     PremiumOnly = false
        
@@ -108,3 +108,40 @@ end)
 
       end
 })
+local Tab = Window:MakeTab({
+    Name = "Misc",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+OrionLib:Init()
+
+Tab:AddButton({
+    Name = "Walkspeed",
+    Callback = function()
+            
+                local TargetWalkspeed
+CharTab:AddSlider({
+	Name = "Speed",
+	Min = 0,
+	Max = 50,
+	Default = 5,
+	Color = Color3.fromRGB(255,255,255),
+	Increment = 1,
+	Callback = function(Value)
+		TargetWalkspeed = Value
+	end    
+})
+ 
+local pcl = Instance.new("SpotLight")
+pcl.Brightness = 1
+pcl.Face = Enum.NormalId.Front
+pcl.Range = 90
+pcl.Parent = game.Players.LocalPlayer.Character.Head
+pcl.Enabled = false 
+
+      end
+})
+OrionLib:Init()
+
+        
