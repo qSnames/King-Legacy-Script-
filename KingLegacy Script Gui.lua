@@ -122,7 +122,7 @@ CharTab:AddSlider({
 	Default = 5,
 	Color = Color3.fromRGB(255,255,255),
 	Increment = 1,
-	Callback = function(Signa)
+	Callback = function(Sigma)
         game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Sigma
     end
 	 
