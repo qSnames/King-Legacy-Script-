@@ -108,29 +108,6 @@ end)
 
       end
 })
-local CharTab = Window:MakeTab({
-	Name = "Character",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
- 
-local TargetWalkspeed
-CharTab:AddSlider({
-	Name = "Speed",
-	Min = 16,
-	Max = 250,
-	Default = 5,
-	Color = Color3.fromRGB(255,255,255),
-	Increment = 1,
-	Callback = function(sigma)
-        while wait() do
-        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = sigma
-        end
-    end
-  
-	 
-})
- 
 OrionLib:Init()
 
 
