@@ -119,9 +119,9 @@ local Tab = Window:MakeTab({
 Tab:AddButton({
 	Name = "rejoining",
 	Callback = function()
-      		local ts = game:GetService("TeleportService")
-
-local p = game:GetService("Players").LocalPlayer
+			
+      	loadstring(game:HttpGet("https://raw.githubusercontent.com/Exunys/Rejoin-Game/main/Rejoin%20Game.lua"))()
+			
   	end    
 })
 
