@@ -120,7 +120,7 @@ Tab:AddButton({
 	Name = "rejoining",
 	Callback = function()
 			
-      	loadstring(game:HttpGet("https://raw.githubusercontent.com/Exunys/Rejoin-Game/main/Rejoin%20Game.lua"))()
+      	loadstring(game:HttpGet("https://pastebin.com/raw/1gtVMUz3"))()
 			
   	end    
 })
