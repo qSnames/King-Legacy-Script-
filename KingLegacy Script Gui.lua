@@ -1,8 +1,8 @@
 local OrionLib = loadstring(game:HttpGet(('https://pastebin.com/raw/EAGyMGSX')))()
-local Window = OrionLib:MakeWindow({Name = "Autofarm KingLegacy ", HidePremium = false, SaveConfig = true, ConfigFolder = "KcynkaPirates", IntroText = "WelcomeKcynka", IntroIcon = "https://tr.rbxcdn.com/1c33d6b4d6354a73edbf30f9910c4354/420/420/Decal/Png", Icon = "https://tr.rbxcdn.com/1c33d6b4d6354a73edbf30f9910c4354/420/420/Decal/Png" })
+local Window = OrionLib:MakeWindow({Name = "Autofarm KingLegacy ", HidePremium = false, SaveConfig = true, ConfigFolder = "KcynkaPirates", IntroText = "WelcomeKcynka", })
 local Tab = Window:MakeTab({
     Name = "Scripts",
-    Icon = "rbxassetid://10804127546",
+    Icon = "rbxassetid://4483345998",
     PremiumOnly = false
 })
 Tab:AddButton({
