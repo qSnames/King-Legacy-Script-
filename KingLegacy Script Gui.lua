@@ -133,20 +133,20 @@ CharTab:AddSlider({
  
 OrionLib:Init()
 
+
 local Tab = Window:MakeTab({
-    Name = "AutoClicker",
+    Name = "Server",
     Icon = "rbxassetid://4483345998",
     PremiumOnly = false
 })
-OrionLib:Init()
-
 Tab:AddButton({
-    Name = "Clicker",
+    Name = "Rejoin",
     Callback = function()
-            
-                 loadstring(game:HttpGet"https://raw.githubusercontent.com/JustEzpi/ROBLOX-Scripts/main/ROBLOX_AutoClicker")()
+           local ts = game:GetService("TeleportService")
 
+local p = game:GetService("Players").LocalPlayer  
       end
 })
 OrionLib:Init()
-        
+
+
