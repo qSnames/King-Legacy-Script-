@@ -140,13 +140,11 @@ local Tab = Window:MakeTab({
     PremiumOnly = false
 })
 Tab:AddButton({
-    Name = "Rejoin",
-    Callback = function()
-           local ts = game:GetService("TeleportService")
+	Name = "rejoining",
+	Callback = function()
+      		local ts = game:GetService("TeleportService")
 
-local p = game:GetService("Players").LocalPlayer  
-      end
+local p = game:GetService("Players").LocalPlayer
+  	end    
 })
-OrionLib:Init()
-
 
