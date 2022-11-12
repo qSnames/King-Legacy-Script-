@@ -1,4 +1,4 @@
-local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local OrionLib = loadstring(game:HttpGet(('https://pastebin.com/raw/EAGyMGSX')))()
 local Window = OrionLib:MakeWindow({Name = "Autofarm KingLegacy ", HidePremium = false, SaveConfig = true, ConfigFolder = "KcynkaPirates", IntroText = "WelcomeKcynka", IntroIcon = "https://tr.rbxcdn.com/1c33d6b4d6354a73edbf30f9910c4354/420/420/Decal/Png", Icon = "https://tr.rbxcdn.com/1c33d6b4d6354a73edbf30f9910c4354/420/420/Decal/Png" })
 local Tab = Window:MakeTab({
     Name = "Scripts",
@@ -133,17 +133,20 @@ CharTab:AddSlider({
  
 OrionLib:Init()
 
-local CharTab = Window:MakeTab({
-	Name = "AutoClicker",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
+local Tab = Window:MakeTab({
+    Name = "AutoClicker",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
 })
- Tab:AddButton({
+OrionLib:Init()
+
+Tab:AddButton({
     Name = "Clicker",
     Callback = function()
-  loadstring(game:HttpGet("https://raw.githubusercontent.com/JustEzpi/ROBLOX-Scripts/main/ROBLOX_AutoClicker"))()
+            
+                 loadstring(game:HttpGet"https://raw.githubusercontent.com/JustEzpi/ROBLOX-Scripts/main/ROBLOX_AutoClicker")()
+
       end
 })
-
- 
+OrionLib:Init()
         
